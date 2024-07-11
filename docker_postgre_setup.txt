@@ -1,0 +1,5 @@
+docker pull postgres:latest
+
+docker run --name postgres_container -e POSTGRES_PASSWORD=mypasword -e POSTGRES_USER=root -p 5432:5432 -d postgres
+
+psql -l -Exce tab in Docker list of containers, list all the databases that are running.
